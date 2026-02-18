@@ -490,3 +490,65 @@ p{
 .struktur-card:hover{
     transform:translateY(-8px);
 }
+
+/* =========================
+   GALERI SECTION
+========================= */
+
+.galeri-block{
+    width:100%;
+    margin-top:60px;
+}
+
+.galeri-block h3{
+    margin-bottom:20px;
+}
+
+
+/* SLIDER WRAPPER */
+
+.galeri-slider{
+    overflow:hidden;
+    position:relative;
+}
+
+
+/* TRACK AUTO SCROLL */
+
+.galeri-track{
+    display:flex;
+    gap:20px;
+    width:max-content;
+    animation:scrollGaleri 30s linear infinite;
+}
+
+
+/* IMAGE STYLE */
+
+.galeri-track img{
+    width:280px;
+    height:180px;
+    object-fit:cover;
+    border-radius:16px;
+
+    transition:0.4s;
+    cursor:pointer;
+}
+
+/* HOVER ZOOM */
+
+.galeri-track img:hover{
+    transform:scale(1.08);
+}
+
+
+/* AUTO SCROLL ANIMATION */
+
+@keyframes scrollGaleri{
+    from{
+        transform:translateX(0);
+    }
+    to{
+        transform:translateX(-50%);
+    }
+}
