@@ -146,15 +146,17 @@ if (prestasiTrack) {
 
 const backTop = document.querySelector(".back-to-top");
 
-window.addEventListener("scroll", () => {
+if(backTop){
+  window.addEventListener("scroll", () => {
 
-  if (window.scrollY > 400) {
-    backTop.classList.add("show");
-  } else {
-    backTop.classList.remove("show");
-  }
+    if (window.scrollY > 400) {
+      backTop.classList.add("show");
+    } else {
+      backTop.classList.remove("show");
+    }
 
-});
+  });
+}
 
 if (backTop) {
   backTop.addEventListener("click", () => {
