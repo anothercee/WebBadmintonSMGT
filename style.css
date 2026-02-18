@@ -552,3 +552,7 @@ p{
         transform:translateX(-50%);
     }
 }
+
+.galeri-track:hover{
+    animation-play-state:paused;
+}
