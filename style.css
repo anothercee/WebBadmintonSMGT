@@ -556,3 +556,95 @@ p{
 .galeri-track:hover{
     animation-play-state:paused;
 }
+
+/* =========================
+   PRESTASI SECTION
+========================= */
+
+.prestasi-slider{
+    overflow:hidden;
+    width:100%;
+    margin-top:40px;
+}
+
+
+/* TRACK */
+
+.prestasi-track{
+    display:flex;
+    gap:25px;
+    width:max-content;
+
+    animation:scrollPrestasi 45s linear infinite;
+}
+
+
+/* CARD ITEM */
+
+.prestasi-item{
+    position:relative;
+    width:300px;
+    height:220px;
+    border-radius:18px;
+    overflow:hidden;
+    cursor:pointer;
+}
+
+
+/* IMAGE */
+
+.prestasi-item img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    transition:0.4s;
+}
+
+
+/* OVERLAY TEXT */
+
+.prestasi-overlay{
+    position:absolute;
+    bottom:0;
+    width:100%;
+    padding:20px;
+
+    background:linear-gradient(transparent, rgba(0,0,0,0.85));
+    transition:0.4s;
+}
+
+.prestasi-overlay h3{
+    font-size:20px;
+}
+
+.prestasi-overlay p{
+    font-size:13px;
+    color:#ccc;
+}
+
+
+/* HOVER EFFECT */
+
+.prestasi-item:hover img{
+    transform:scale(1.1);
+}
+
+.prestasi-item:hover .prestasi-overlay{
+    background:linear-gradient(transparent, rgba(0,0,0,0.95));
+}
+
+
+/* AUTO SCROLL */
+
+@keyframes scrollPrestasi{
+    from{
+        transform:translateX(0);
+    }
+    to{
+        transform:translateX(-50%);
+    }
+}
+
+.prestasi-track:hover{
+    animation-play-state:paused;
+}
