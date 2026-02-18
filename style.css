@@ -846,3 +846,93 @@ p{
   transform: scale(1.05);
   box-shadow: 0 0 18px var(--accent);
 }
+
+/* ================= FOOTER ================= */
+
+.footer {
+  position: relative;
+  padding: 100px 8% 60px;
+  text-align: center;
+  overflow: hidden;
+}
+
+/* Glow background subtle */
+
+.footer-glow {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, var(--accent), transparent 70%);
+  opacity: 0.15;
+  top: -200px;
+  left: 50%;
+  transform: translateX(-50%);
+  filter: blur(120px);
+}
+
+/* Container */
+
+.footer-container {
+  position: relative;
+  max-width: 700px;
+  margin: auto;
+}
+
+/* Logo */
+
+.footer-logo {
+  font-family: var(--title-font);
+  font-size: 2rem;
+  margin-bottom: 15px;
+  letter-spacing: 2px;
+}
+
+/* Desc */
+
+.footer-desc {
+  opacity: 0.7;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+/* Social */
+
+.footer-social a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 45px;
+  height: 45px;
+
+  border-radius: 50%;
+  border: 1px solid rgba(255,255,255,0.15);
+
+  font-size: 1.2rem;
+  margin: 0 8px;
+
+  transition: 0.4s;
+}
+
+.footer-social a:hover {
+  background: var(--accent);
+  color: black;
+  transform: translateY(-4px);
+}
+
+/* Divider */
+
+.footer-line {
+  width: 80px;
+  height: 2px;
+  background: var(--accent);
+  margin: 35px auto;
+  opacity: 0.7;
+}
+
+/* Copy */
+
+.footer-copy {
+  font-size: 0.85rem;
+  opacity: 0.6;
+}
