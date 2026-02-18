@@ -648,3 +648,81 @@ p{
 .prestasi-track:hover{
     animation-play-state:paused;
 }
+
+/* =========================
+   JADWAL SECTION
+========================= */
+
+.jadwal-wrapper{
+    width:100%;
+    max-width:800px;
+}
+
+
+/* TABLE STYLE */
+
+.jadwal-table{
+    width:100%;
+    border-collapse:collapse;
+
+    background:rgba(20,20,22,0.7);
+    backdrop-filter:blur(12px);
+    border-radius:16px;
+    overflow:hidden;
+}
+
+
+/* HEADER */
+
+.jadwal-table thead{
+    background:rgba(255,255,255,0.05);
+}
+
+.jadwal-table th{
+    padding:18px;
+    text-align:left;
+    font-weight:600;
+}
+
+
+/* BODY */
+
+.jadwal-table td{
+    padding:18px;
+    border-top:1px solid rgba(255,255,255,0.05);
+    color:#ccc;
+}
+
+
+/* HOVER ROW */
+
+.jadwal-table tbody tr{
+    transition:0.3s;
+}
+
+.jadwal-table tbody tr:hover{
+    background:rgba(96,239,255,0.08);
+}
+
+@media(max-width:600px){
+
+    .jadwal-table thead{
+        display:none;
+    }
+
+    .jadwal-table tr{
+        display:block;
+        margin-bottom:15px;
+        background:rgba(20,20,22,0.7);
+        border-radius:14px;
+        padding:15px;
+    }
+
+    .jadwal-table td{
+        display:flex;
+        justify-content:space-between;
+        border:none;
+        padding:8px 0;
+    }
+
+}
