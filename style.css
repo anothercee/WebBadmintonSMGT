@@ -203,3 +203,66 @@ p{
     }
 
 }
+
+/* =========================
+   HERO SECTION
+========================= */
+
+.hero{
+    text-align:center;
+    position:relative;
+}
+
+.hero-content{
+    max-width:750px;
+}
+
+.hero h1{
+    font-size:64px;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:18px;
+    margin-bottom:35px;
+}
+
+/* =========================
+   HERO BUTTONS
+========================= */
+
+.hero-buttons{
+    display:flex;
+    gap:20px;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
+.btn-primary{
+    padding:14px 32px;
+    border-radius:40px;
+    background:linear-gradient(90deg,#00ff87,#60efff);
+    color:black;
+    font-weight:600;
+    text-decoration:none;
+    transition:0.3s;
+}
+
+.btn-primary:hover{
+    box-shadow:0 0 18px rgba(96,239,255,0.6);
+    transform:translateY(-2px);
+}
+
+.btn-secondary{
+    padding:14px 32px;
+    border-radius:40px;
+    border:1px solid rgba(255,255,255,0.2);
+    color:white;
+    text-decoration:none;
+    transition:0.3s;
+}
+
+.btn-secondary:hover{
+    border-color:#60efff;
+    box-shadow:0 0 14px rgba(96,239,255,0.4);
+}
