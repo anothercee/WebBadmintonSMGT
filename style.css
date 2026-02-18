@@ -431,3 +431,62 @@ p{
     }
 
 }
+
+/* =========================
+   STRUKTUR SECTION
+========================= */
+
+.struktur-wrapper{
+    width:100%;
+    max-width:1000px;
+}
+
+
+/* ROW */
+
+.struktur-row{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    margin:40px 0;
+    flex-wrap:wrap;
+}
+
+
+/* CARD KHUSUS STRUKTUR */
+
+.struktur-card{
+    width:240px;
+    text-align:center;
+}
+
+
+/* CARD KETUA HIGHLIGHT */
+
+.struktur-card.utama{
+    background:rgba(30,30,35,0.8);
+    border:1px solid rgba(96,239,255,0.3);
+}
+
+
+/* CONNECTOR LINE */
+
+.struktur-row.center{
+    position:relative;
+}
+
+.struktur-row.center::after{
+    content:"";
+    position:absolute;
+    bottom:-20px;
+    width:2px;
+    height:40px;
+    background:linear-gradient(#00ff87,#60efff);
+    opacity:0.3;
+}
+
+/* HOVER EMPHASIS */
+
+.struktur-card:hover{
+    transform:translateY(-8px);
+}
