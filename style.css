@@ -730,46 +730,73 @@ p{
 /* ================= PENGUMUMAN ================= */
 
 .pengumuman {
-  padding: 100px 8%;
+  padding: 120px 8%;
+}
+
+.pengumuman .section-title {
+  text-align: center;
+  margin-bottom: 60px;
 }
 
 .pengumuman-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 30px;
 }
 
+/* Card */
+
 .pengumuman-card {
+  padding: 30px 25px;
+  border-radius: 14px;
+
   background: rgba(255,255,255,0.03);
   border: 1px solid rgba(255,255,255,0.05);
-  padding: 25px;
-  border-radius: 12px;
-  backdrop-filter: blur(10px);
+
+  backdrop-filter: blur(12px);
+
   transition: 0.4s;
   position: relative;
   overflow: hidden;
 }
+
+/* Accent glow subtle */
+
+.pengumuman-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 14px;
+  opacity: 0;
+  transition: 0.4s;
+  box-shadow: 0 0 25px var(--accent);
+}
+
+.pengumuman-card:hover::before {
+  opacity: 0.4;
+}
+
+/* Hover effect */
 
 .pengumuman-card:hover {
   transform: translateY(-8px);
   border-color: var(--accent);
 }
 
-.pengumuman-date {
-  font-size: 0.8rem;
-  color: var(--accent);
+/* Title */
+
+.pengumuman-card h3 {
+  font-family: var(--title-font);
+  margin-bottom: 12px;
   letter-spacing: 1px;
 }
 
-.pengumuman-card h3 {
-  margin: 12px 0;
-  font-size: 1.2rem;
-}
+/* Text */
 
 .pengumuman-card p {
-  font-size: 0.9rem;
-  opacity: 0.7;
+  opacity: 0.75;
   line-height: 1.6;
+  font-size: 0.95rem;
 }
 
 /* ================= SURVEY ================= */
