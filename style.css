@@ -1,3 +1,8 @@
+:root{
+    --accent: #60efff;
+    --title-font: 'Playfair Display', serif;
+}
+
 /* =========================
    IMPORT FONT
 ========================= */
@@ -150,6 +155,22 @@ p{
     width:100%;
 }
 
+/* ===== NAV ACTIVE LINK ===== */
+.nav-links a.active {
+  color: #00e0ff;
+  font-weight: 600;
+  position: relative;
+}
+
+.nav-links a.active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 100%;
+  height: 2px;
+  background: #00e0ff;
+}
 
 /* =========================
    HAMBURGER
@@ -512,17 +533,6 @@ p{
     position:relative;
 }
 
-
-/* TRACK AUTO SCROLL */
-
-.galeri-track{
-    display:flex;
-    gap:20px;
-    width:max-content;
-    animation:scrollGaleri 30s linear infinite;
-}
-
-
 /* IMAGE STYLE */
 
 .galeri-track img{
@@ -566,18 +576,6 @@ p{
     width:100%;
     margin-top:40px;
 }
-
-
-/* TRACK */
-
-.prestasi-track{
-    display:flex;
-    gap:25px;
-    width:max-content;
-
-    animation:scrollPrestasi 45s linear infinite;
-}
-
 
 /* CARD ITEM */
 
